@@ -10,6 +10,7 @@
     <div style="margin-top: 20px; margin-bottom: 20px;">
         @yield('content')
     </div>
+    @include('add_category')
 </div>
 </body>
 </html>

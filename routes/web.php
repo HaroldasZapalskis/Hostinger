@@ -14,3 +14,4 @@
 Route::get('/', 'CategoryController@recursive');
 Route::get('/recursive', 'CategoryController@recursive');
 Route::get('/iterative', 'CategoryController@iterative');
+Route::post('/category', 'CategoryController@store')->name('category.store');
