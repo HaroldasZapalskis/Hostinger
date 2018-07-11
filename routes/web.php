@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CategoryController@recursive');
+Route::get('/recursive', 'CategoryController@recursive');
