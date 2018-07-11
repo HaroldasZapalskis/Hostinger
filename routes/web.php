@@ -13,3 +13,4 @@
 
 Route::get('/', 'CategoryController@recursive');
 Route::get('/recursive', 'CategoryController@recursive');
+Route::get('/iterative', 'CategoryController@iterative');

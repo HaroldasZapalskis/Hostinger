@@ -31,4 +31,13 @@ class CategoryController extends Controller
         }
         return $branch;
     }
+
+    public function iterative()
+    {
+        $categories = Category::orderBy('depth')->orderBy('parent_id')->get();
+        $maxDepth = Category::getMaxDepth();
+
+        return view('iterative')
+            ->with(['categories' => $categories, 'maxDepth' => $maxDepth]);
+    }
 }
